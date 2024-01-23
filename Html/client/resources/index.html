@@ -1,14 +1,55 @@
-<!-- In index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Head elements (include CSS files here) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop By Recipe</title>
+    <link rel="stylesheet" href="C:\Users\Michael Brogan\2024SpringRepo\CookBook\Html\client\resources\styles\styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <div id="recipe-list">
-        <!-- Recipes will be listed here -->
-    </div>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Shop By Recipe</h1>
+            <nav>
+                <a href="#recipes">Recipes</a>
+                <a href="#cart">Cart</a>
+            </nav>
+        </div>
+    </header>
 
-    <script src="script.js"></script>
+    <!-- Recipes Section -->
+    <section id="recipes" class="container">
+        <h2 class="text-center">Available Recipes</h2>
+        <div class="recipe-list">
+            <!-- Sample Recipe Card -->
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/random/200x200?food" alt="Recipe Image">
+                <h3>Recipe Title</h3>
+                <p>Short description of the recipe...</p>
+                <button class="btn">View Recipe</button>
+            </div>
+            <!-- Repeat for other recipes -->
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="container">
+        <h2 class="text-center">Your Cart</h2>
+        <div class="cart">
+            <!-- Sample Cart Item -->
+            <div class="cart-item">
+                <span class="item-name">Ingredient Name</span>
+                <span class="item-quantity">1 kg</span>
+                <span class="item-price">$10.00</span>
+            </div>
+            <!-- Repeat for other cart items -->
+        </div>
+        <div class="text-center mt-2">
+            <button class="btn">Checkout</button>
+        </div>
+    </section>
+
+    <script src="C:\Users\Michael Brogan\2024SpringRepo\CookBook\Html\client\resources\javascript\main.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>

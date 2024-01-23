@@ -1,4 +1,4 @@
-﻿// In RecipeController.cs
+﻿// In Program.cs
 [HttpGet]
 public async Task<IActionResult> GetRecipes() {
     // Logic to fetch all recipes
